@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Página web de blog de Café">
+
+    <!-- PREFETCH para cargar otra página de manera rápida para mejorar la navegación-->
+    <link rel="prefetch" href="nosotros.html" as="document">
+
+    <!--Añadir normalize solo para proyectos sin frameworks-->
+    <link rel="stylesheet" href="css/normalize.css" as="style">
+
+    <!-- PRELOAD para cargar inmediatamente los elementos, si son pequeños no es muy necesario-->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" as="style"> 
+    <link rel="preload" href="css/style.css" as="style"> 
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--Hoja de estilos-->
+    <link rel="stylesheet" href="css/style.css">
+
+    
+
+    <title>Blog de Café</title>
+</head>
+<body>
+    
+
+    <!-- HEADER-->
+    <header class="header">
+
+        <div class="contenedor">
+            
+            <div class="barra">
+                <a href="index.html" class="logo">
+                    <h1 class="logo__nombre no-margin center-text">Blog<span class="logo__nombre--bold">DeCafé</span> </h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+
+            </div>
+
+
+        </div>
+
+        <div class="header__text">
+            <h2 class="no-margin">
+                Blog de café con consejos y cursos
+            </h2>
+
+            <p class="no-margin">
+                Aprender de los expertos con las mejores recetas y consejos
+            </p>
+
+        </div>
+    </header>
+    <!-- END HEADER-->
+
+    <!-- CONTENIDO-->
+    <div class="contenedor contenido-principal">
+        <main class="blog">
+            <h3>Nuestro Blog</h3>
+
+            <article class="entrada">
+
+                <div class="entrada__image">
+                    <!-- Para cargar diferentes formatos de img para que el navegador eliga cual es el mejor formato -->
+                    <picture>
+                        <source srcset="img/blog1.webp" type="image/webp" loading="lazy">
+                        <img src="img/blog1.jpg" alt="Imagen blog café" loading="lazy"> <!-- 'lazy' para cargar la imagen cuando sea necesario -->
+                    </picture>
+
+                </div>
+
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">Tipos de Grano de Café</h4>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Perferendis possimus molestiae ducimus cum mollitia odio 
+                        quam dolorum sunt vitae, voluptatibus animi voluptatum adipisci 
+                        quas praesentium impedit. Quod eos dolorem optio.
+                    </p>
+
+                    <a href="entrada.html" class="boton boton--primario">Leer entrada</a>
+
+                </div>
+
+
+            </article>
+
+
+            <article class="entrada">
+
+                <div class="entrada__image">
+
+                    <picture>
+                        <source srcset="img/blog2.webp" type="image/webp" loading="lazy">
+                        <img src="img/blog2.jpg" alt="Imagen blog café" loading="lazy">
+                    </picture>
+                    
+                </div>
+
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">3 Deliciosas Recetas de Café</h4>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Perferendis possimus molestiae ducimus cum mollitia odio 
+                        quam dolorum sunt vitae, voluptatibus animi voluptatum adipisci 
+                        quas praesentium impedit. Quod eos dolorem optio.
+                    </p>
+
+                    <a href="entrada.html" class="boton boton--primario">Leer entrada</a>
+
+                </div>
+
+
+            </article>
+
+
+
+            <article class="entrada">
+
+                <div class="entrada__image">
+
+                    <picture>
+                        <source srcset="img/blog3.webp" type="image/webp" loading="lazy">
+                        <img src="img/blog3.jpg" alt="Imagen blog café" loading="lazy">
+                    </picture>
+                   
+                </div>
+
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">Beneficios del Café</h4>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Perferendis possimus molestiae ducimus cum mollitia odio 
+                        quam dolorum sunt vitae, voluptatibus animi voluptatum adipisci 
+                        quas praesentium impedit. Quod eos dolorem optio.
+                    </p>
+
+                    <a href="entrada.html" class="boton boton--primario">Leer entrada</a>
+
+                </div>
+
+
+            </article>
+
+
+        </main>
+
+        <!--Barra lateral CURSOS-->        
+        <aside class="sidebar">
+            <h3>Nuestros Cursos y Talleres</h3>
+
+            <ul class="cursos no-padding">
+                <li class="widget-curso">
+                    <h4 class="no-margin">
+                        Tecnicas de Extracción de Café
+                    </h4>
+
+                    <p class="widget-curso__label">Precio:
+                        <span class="widget-curso__info">Gratis</span>
+                    </p>
+
+                    <p class="widget-curso__label">Cupo:
+                        <span class="widget-curso__info">20</span>
+                    </p>
+
+                    <a href="cursos.html" class="boton boton--secundario">Más información sobre cursos</a>
+
+                </li>
+
+
+                <li class="widget-curso">
+                    <h4 class="no-margin">
+                        4 Recetas de Café para Principiantes
+                    </h4>
+
+                    <p class="widget-curso__label">Precio:
+                        <span class="widget-curso__info">Gratis</span>
+                    </p>
+
+                    <p class="widget-curso__label">Cupo:
+                        <span class="widget-curso__info">20</span>
+                    </p>
+
+                    <a href="cursos.html" class="boton boton--secundario">Más información sobre cursos</a>
+
+                </li>
+
+
+            </ul>
+
+        </aside>
+
+    </div>
+    <!-- END CONTENIDO-->
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+       <div class="contenedor">
+
+            <div class="barra">
+                <a href="index.html" class="logo">
+                    <h1 class="logo__nombre no-margin center-text">Blog<span class="logo__nombre--bold">DeCafé</span> </h1>
+                </a>
+
+               
+
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+
+            </div>
+
+            <div class="copy">
+
+                <p class="copy__text">
+                    &COPY; 2023. Desarrollado por <a href="https://github.com/LuisChicaizaDev" class="copy__text--bold">Luis Chicaiza</a> 
+                </p>
+                
+            </div>
+
+       </div>
+    </footer>
+    <!-- END FOOTER -->
+
+
+    <!--MODERNIZR para analizar si el navegador soporta el formato webp-->
+    <script src="js/modernizr.js"></script>
+
+</body>
+</html>
